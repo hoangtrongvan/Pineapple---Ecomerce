@@ -36,10 +36,10 @@
 
    int i=stmt.executeUpdate("insert into user(username, password, first, last, birth, tel, address) values('"+a+"','"+b+"','"+d+"','"+e+"','"+f+"','"+g+"','"+h+"')");
      if (i > 0) {
-        response.sendRedirect("/pineapple2/login.jsp");
+        response.sendRedirect("/pineapple/login.jsp");
     }
      else {
-         response.sendRedirect("/pineapple2/index.jsp");
+         response.sendRedirect("/pineapple/index.jsp");
      }
  }
     catch(Exception e){
